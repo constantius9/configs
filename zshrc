@@ -44,15 +44,31 @@ plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-alias emacs='emacs -nw'
-alias ez='emacs ~/.zshrc'
+# ==== Editor setup ====
+EDITOR_META='emacsclient -nw'
+
+export EDITOR=$EDITOR_META
+
+pgrep -f 'emacs --daemon' > /dev/null
+if [ $? -ne 0 ]
+then
+    emacs --daemon
+fi
+# ========
+BASE_DIR=$(dirname $0)
+export PATH=$BASE_DIR'/.cabal/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+
+# ==== Editing shortcuts ====
+alias e=$EDITOR
+alias ez=$EDITOR' ~/.zshrc'
+alias egc=$EDITOR' .git/config'
+
+# ==== Configuration update ====
 alias sz='source ~/.zshrc'
 
-export EDITOR='emacs -nw'
-
-export PATH='/home/constantius/.cabal/bin':$PATH
-
+# ==== HSEnv management ====
 alias hsa='source .hsenv/bin/activate'
 alias hsd='deactivate_hsenv'
+
+# ==== Color enhancements ====
 export TERM=xterm-256color
