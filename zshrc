@@ -76,3 +76,6 @@ alias afl='apt-file list'
 
 # ==== Color enhancements ====
 export TERM=xterm-256color
+
+# ==== Stop sudo from changing PATH ====
+alias sudo='sudo env PATH=$PATH'
