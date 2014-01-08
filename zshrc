@@ -55,8 +55,7 @@ then
     emacs --daemon
 fi
 # ========
-BASE_DIR=$(dirname $0)
-export PATH=$BASE_DIR'/.cabal/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+export PATH=/usr/local/texlive/2013/bin/x86_64-linux/:~/install/bin:~/.cabal/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 
 # ==== Editing shortcuts ====
 alias e=$EDITOR' -t'
