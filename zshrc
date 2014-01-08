@@ -70,5 +70,9 @@ alias sz='source ~/.zshrc'
 alias hsa='source .hsenv/bin/activate'
 alias hsd='deactivate_hsenv'
 
+# ==== Package management ====
+alias acs='apt-cache search'
+alias afl='apt-file list'
+
 # ==== Color enhancements ====
 export TERM=xterm-256color
