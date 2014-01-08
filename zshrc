@@ -45,7 +45,7 @@ plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # ==== Editor setup ====
-EDITOR_META='emacsclient -nw'
+EDITOR_META='emacsclient'
 
 export EDITOR=$EDITOR_META
 
@@ -59,7 +59,8 @@ BASE_DIR=$(dirname $0)
 export PATH=$BASE_DIR'/.cabal/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
 
 # ==== Editing shortcuts ====
-alias e=$EDITOR
+alias e=$EDITOR' -t'
+alias ec=$EDITOR' -c'
 alias ez=$EDITOR' ~/.zshrc'
 alias egc=$EDITOR' .git/config'
 
