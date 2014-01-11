@@ -71,6 +71,7 @@ alias hsa='source .hsenv/bin/activate'
 alias hsd='deactivate_hsenv'
 
 # ==== Package management ====
+alias agi='apt-get install'
 alias acs='apt-cache search'
 alias afl='apt-file list'
 
