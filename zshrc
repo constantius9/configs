@@ -55,7 +55,7 @@ then
     emacs --daemon
 fi
 # ========
-export PATH=/usr/local/texlive/2013/bin/x86_64-linux/:~/.cabal/bin:~/install/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+export PATH=~/Work/bin/cortex-cross-tools/bin/:/usr/local/texlive/2013/bin/x86_64-linux/:~/.cabal/bin:~/install/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 
 # ==== Editing shortcuts ====
 alias e=$EDITOR' -t'
