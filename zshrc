@@ -45,15 +45,10 @@ plugins=(cabal command-not-found git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # ==== Editor setup ====
-EDITOR_META='emacsclient'
+EDITOR_META='emacsclient -a ""'
 
 export EDITOR=$EDITOR_META
 
-pgrep -f 'emacs --daemon' > /dev/null
-if [ $? -ne 0 ]
-then
-    emacs --daemon
-fi
 # ========
 export PATH=~/Work/bin/cortex-cross-tools/bin/:/usr/local/texlive/2013/bin/x86_64-linux/:~/.cabal/bin:~/install/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 
