@@ -63,10 +63,6 @@ alias ere="$EDITOR_META -e \"(remember-other-frame)\""
 # ==== Configuration update ====
 alias sz='source ~/.zshrc'
 
-# ==== HSEnv management ====
-alias hsa='source .hsenv/bin/activate'
-alias hsd='deactivate_hsenv'
-
 # ==== Package management ====
 alias sagi='sudo apt-get install'
 alias acs='apt-cache search'
