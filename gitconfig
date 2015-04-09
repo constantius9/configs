@@ -9,3 +9,5 @@
 	default = current
 [credential]
 	helper = cache
+[branch]
+	autosetuprebase = always

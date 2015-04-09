@@ -74,3 +74,9 @@ alias afl='apt-file list'
 
 # ==== Color enhancements ====
 export TERM=xterm-256color
+
+# ==== Git aliases ====
+alias glgd='git log --graph --decorate'
+
+# ==== Racer
+export RUST_SRC_PATH="$HOME/rust/src"
