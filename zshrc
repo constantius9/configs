@@ -40,23 +40,25 @@ DISABLE_CORRECTION="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(cabal command-not-found git zsh-syntax-highlighting)
+plugins=(cabal cp command-not-found emacs git github gitignore screen sudo zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
 # ==== Editor setup ====
 EDITOR_META='emacsclient -a ""'
 
-export EDITOR=$EDITOR_META' -c'
+export EDITOR="$EDITOR_META -c"
 
 # ========
 export PATH=/usr/local/texlive/2013/bin/x86_64-linux/:~/.cabal/bin:~/install/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+export LD_LIBRARY_PATH=~/install/lib
 
 # ==== Editing shortcuts ====
-alias e=$EDITOR' -t'
-alias ec=$EDITOR
-alias ez=$EDITOR' ~/.zshrc'
-alias egc=$EDITOR' .git/config'
+alias e="$EDITOR -t"
+alias ec="$EDITOR"
+alias ez="$EDITOR ~/.zshrc"
+alias egc="$EDITOR .git/config"
+alias ere="$EDITOR_META -e \"(remember-other-frame)\""
 
 # ==== Configuration update ====
 alias sz='source ~/.zshrc'
