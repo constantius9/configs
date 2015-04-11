@@ -65,6 +65,9 @@ alias sz='source ~/.zshrc'
 
 # ==== Package management ====
 alias sagi='sudo apt-get install'
+alias sagu='sudo apt-get update'
+alias saguu='sudo apt-get upgrade'
+alias sagdu='sudo apt-get dist-upgrade'
 alias acs='apt-cache search'
 alias afl='apt-file list'
 
