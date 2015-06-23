@@ -47,7 +47,7 @@ source $ZSH/oh-my-zsh.sh
 # ==== Editor setup ====
 EDITOR_META='emacsclient -a ""'
 
-export EDITOR="$EDITOR_META -c"
+export EDITOR="$EDITOR_META -t"
 
 # ========
 export LD_LIBRARY_PATH=~/lib:$LD_LIBRARY_PATH
