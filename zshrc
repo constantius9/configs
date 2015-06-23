@@ -50,8 +50,7 @@ EDITOR_META='emacsclient -a ""'
 export EDITOR="$EDITOR_META -c"
 
 # ========
-export PATH=/usr/local/texlive/2013/bin/x86_64-linux/:~/.cabal/bin:~/install/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
-export LD_LIBRARY_PATH=~/install/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=~/lib:$LD_LIBRARY_PATH
 
 # ==== Editing shortcuts ====
 alias e="$EDITOR -t"
