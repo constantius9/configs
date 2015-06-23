@@ -78,3 +78,10 @@ alias glgd='git log --graph --decorate'
 
 # ==== Racer
 export RUST_SRC_PATH="$HOME/rust/src"
+
+# ==== Java
+export JAVA_HOME="/usr/java/latest"
+export PATH="$PATH:/usr/java/latest/bin:/usr/java/latest/jre/bin"
+
+# ==== git-hub
+source ~/git-hub/init
