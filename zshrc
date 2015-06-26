@@ -50,11 +50,12 @@ EDITOR_META='emacsclient -a ""'
 export EDITOR="$EDITOR_META -t"
 
 # ========
-export LD_LIBRARY_PATH=~/lib:$LD_LIBRARY_PATH
+export PATH="$HOME/bin:$PATH"
+export LD_LIBRARY_PATH="$HOME/lib:$LD_LIBRARY_PATH"
 
 # ==== Editing shortcuts ====
-alias e="$EDITOR -t"
-alias ec="$EDITOR"
+alias e="$EDITOR"
+alias ec="$EDITOR_META -c"
 alias ez="$EDITOR ~/.zshrc"
 alias egc="$EDITOR .git/config"
 alias ere="$EDITOR_META -e \"(remember-other-frame)\""
