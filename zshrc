@@ -40,9 +40,34 @@ DISABLE_CORRECTION="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(cabal cp command-not-found git github gitignore screen sudo yum zsh-syntax-highlighting)
+plugins=(
+    autojump
+    cabal
+    command-not-found
+    cp
+    git
+    git-extras
+    git-remote-branch
+    github
+    gitignore
+    gnu-utils
+    history
+    history-substring-search
+    screen
+    sudo
+    ubuntu
+    zsh-syntax-highlighting
+    zsh_reload
+)
 
 source $ZSH/oh-my-zsh.sh
+
+# == Shell tuning
+
+# ==== Options
+setopt AUTO_PUSHD
+
+# ==
 
 # ==== Editor setup ====
 EDITOR_META='emacsclient -a ""'
